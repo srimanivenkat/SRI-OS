@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/network_traffic_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical|end"
+    android:paddingStart="4dp"
+    android:paddingEnd="4dp">
+
+    <!-- Download Speed (Top) -->
+    <TextView
+        android:id="@+id/traffic_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="9sp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:fontFamily="sans-serif-medium"
+        android:singleLine="true" />
+
+    <!-- Upload Speed (Bottom) -->
+    <TextView
+        android:id="@+id/traffic_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="9sp"
+        android:textColor="?android:attr/textColorSecondary"
+        android:fontFamily="sans-serif-medium"
+        android:singleLine="true" />
+
+</LinearLayout>

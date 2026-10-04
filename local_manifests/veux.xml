@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Device Tree for veux (POCO X4 Pro 5G / Redmi Note 11 Pro 5G) -->
+    <project path="device/xiaomi/veux" name="LineageOS/android_device_xiaomi_veux" remote="github" revision="lineage-21" />
+    <project path="device/xiaomi/sm6375-common" name="LineageOS/android_device_xiaomi_sm6375-common" remote="github" revision="lineage-21" />
+
+    <!-- Proprietary Vendor Blobs (Camera, Modem, Wi-Fi Drivers) -->
+    <project path="vendor/xiaomi/veux" name="TheMuppets/proprietary_vendor_xiaomi_veux" remote="github" revision="lineage-21" />
+    <project path="vendor/xiaomi/sm6375-common" name="TheMuppets/proprietary_vendor_xiaomi_sm6375-common" remote="github" revision="lineage-21" />
+
+    <!-- Snapdragon 695 Linux Kernel Source -->
+    <project path="kernel/xiaomi/sm6375" name="LineageOS/android_kernel_xiaomi_sm6375" remote="github" revision="lineage-21" />
+
+    <!-- Hardware Abstraction Layers (HALs) for Xiaomi -->
+    <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" remote="github" revision="lineage-21" />
+</manifest>

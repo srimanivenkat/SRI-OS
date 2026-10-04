@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Lock Screen & AOD Tweaks">
+
+    <!-- Clock Engine -->
+    <PreferenceCategory android:title="Clock Customization">
+        <ListPreference
+            android:key="lock_screen_clock_font"
+            android:title="Clock Font Style"
+            android:summary="Change the typography of the main lock screen clock"
+            android:entries="@array/clock_fonts_entries"
+            android:entryValues="@array/clock_fonts_values"
+            android:defaultValue="default_sans" />
+            
+        <SwitchPreference
+            android:key="lock_screen_depth_effect"
+            android:title="Magazine Depth Effect"
+            android:summary="Uses AI to place the wallpaper subject in front of the clock"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <!-- Always On Display (AOD) -->
+    <PreferenceCategory android:title="Always On Display">
+        <ListPreference
+            android:key="aod_display_mode"
+            android:title="AOD Behavior"
+            android:summary="Control when the Always On Display is active"
+            android:entries="@array/aod_mode_entries"
+            android:entryValues="@array/aod_mode_values"
+            android:defaultValue="tap_to_show" />
+    </PreferenceCategory>
+
+    <!-- Media -->
+    <PreferenceCategory android:title="Media & Visualizer">
+        <SwitchPreference
+            android:key="lock_screen_audio_visualizer"
+            android:title="Live Audio Visualizer"
+            android:summary="Show pulsing equalizer bars on Lock Screen and AOD when playing music"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

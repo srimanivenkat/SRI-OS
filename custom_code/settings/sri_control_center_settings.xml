@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Control Center Tweaks">
+
+    <!-- QS Layout Style -->
+    <PreferenceCategory android:title="Layout Style">
+        <ListPreference
+            android:key="qs_panel_style"
+            android:title="Control Center Style"
+            android:summary="Choose between Standard AOSP or Split HyperOS layout"
+            android:entries="@array/qs_style_entries"
+            android:entryValues="@array/qs_style_values"
+            android:defaultValue="split_hyperos" />
+    </PreferenceCategory>
+
+    <!-- Glassmorphism Blur -->
+    <PreferenceCategory android:title="Background Aesthetics">
+        <SwitchPreference
+            android:key="qs_enable_blur"
+            android:title="Enable Frosted Glass Blur"
+            android:summary="Applies a heavy blur to the wallpaper behind quick settings"
+            android:defaultValue="true" />
+            
+        <SeekBarPreference
+            android:key="qs_blur_radius"
+            android:title="Blur Intensity"
+            android:max="100"
+            android:defaultValue="50"
+            android:dependency="qs_enable_blur" />
+    </PreferenceCategory>
+
+    <!-- UI Elements -->
+    <PreferenceCategory android:title="Customization">
+        <SwitchPreference
+            android:key="qs_brightness_bottom"
+            android:title="Bottom Brightness Slider"
+            android:summary="Moves the brightness slider to the bottom for easy thumb reach"
+            android:defaultValue="true" />
+
+        <ListPreference
+            android:key="qs_tile_shape"
+            android:title="Quick Setting Icon Shape"
+            android:entries="@array/qs_shapes_entries"
+            android:entryValues="@array/qs_shapes_values"
+            android:defaultValue="rounded_square" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
